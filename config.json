@@ -1,0 +1,81 @@
+{
+    "elementID": "klaro",
+    "storageMethod": "cookie",
+    "cookieName": "klaro",
+
+    "cookieExpiresAfterDays": 365,
+
+    "privacyPolicy": "/#privacy",
+
+    "default": false,
+
+    "mustConsent": false,
+    "acceptAll": true,
+
+    "hideDeclineAll": false,
+
+    "hideLearnMore": false,
+
+    "translations": {
+        "de": {
+            "consentNotice": {
+                "extraHTML": "<p>test</p>"
+            },
+            "consentModal": {
+                "description": "Hier können Sie einsehen und anpassen, welche Information wir über Sie sammeln. Einträge die als \"Beispiel\" gekennzeichnet sind dienen lediglich zu Demonstrationszwecken und werden nicht wirklich verwendet."
+            },
+            "inlineTracker": {
+                "description": "Beispiel für ein Inline-Tracking Skript"
+            },
+            "externalTracker": {
+                "description": "Beispiel für ein externes Tracking Skript"
+            },
+            "adsense": {
+                "description": "Anzeigen von Werbeanzeigen (Beispiel)",
+                "title": "Google AdSense Werbezeugs"
+            },
+            "matomo": {
+                "description": "Sammeln von Besucherstatistiken"
+            },
+            "camera": {
+                "description": "Eine Überwachungskamera (nur ein Beispiel zu IMG-Tags)"
+            },
+            "cloudflare": {
+                "description": "Schutz gegen DDoS-Angriffe"
+            },
+            "purposes": {
+                "analytics": "Besucher-Statistiken",
+                "security": "Sicherheit",
+                "livechat": "Live Chat",
+                "advertising": "Anzeigen von Werbung",
+                "styling": "Styling"
+            }
+        }
+    },
+
+    "apps": [
+        {
+            "name": "inlineTracker",
+            "title": "Inline Tracker",
+            "purposes": ["analytics"],
+            "cookies": ["inline-tracker"],
+            "optOut": false
+        },
+        {
+            "name": "googleTracker",
+            "title": "Google Tracker",
+            "purposes": ["google"],
+            "cookies": ["google-tracker"],
+            "optOut": false,
+            "apps": [
+                {
+                    "name": "inlineTracker",
+                    "title": "Inline Tracker",
+                    "purposes": ["analytics"],
+                    "cookies": ["inline-tracker"],
+                    "optOut": false
+                }
+            ]
+        }
+    ]
+}
