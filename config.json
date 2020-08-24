@@ -1,0 +1,93 @@
+{
+    "elementID": "klaro",
+    "storageMethod": "cookie",
+    "cookieName": "klaro",
+
+    "cookieExpiresAfterDays": 365,
+
+    "privacyPolicy": "/#privacy",
+
+    "default": false,
+
+    "mustConsent": false,
+    "acceptAll": true,
+
+    "hideDeclineAll": false,
+
+    "hideLearnMore": false,
+
+    "apps": [
+        {
+            "name": "technical-and-functional-cookies",
+            "title": {
+                "de": "DE Technical and functional Cookies, for the best user experience",
+                "en": "EN Technical and functional Cookies, for the best user experience"
+            },
+            "purposes": ["technical-and-functional-cookies"],
+            "cookies": ["technical-and-functional-cookies"],
+            "optOut": false,
+            "disableButton": true,
+            "apps": [
+                {
+                    "name": "consent-management-platform",
+                    "title": {
+                        "de": "DE Consent Management Platform",
+                        "en": "EN Consent Management Platform"
+                    },
+                    "purposes": ["analytics"],
+                    "cookies": ["consent-management-platform"],
+                    "optOut": false,
+                    "disableButton": true
+                },
+                {
+                    "name": "tech-cookies",
+                    "title": {
+                        "de": "DE Tech Cookies",
+                        "en": "EN Tech Cookies"
+                    },
+                    "purposes": ["analytics"],
+                    "cookies": ["tech-cookies"],
+                    "optOut": false,
+                    "disableButton": true
+                }
+            ]
+        },
+        {
+            "name": "marketing-cookies",
+            "title": "Marketing Cookies to ensure success measurement and personalization in campaigns",
+            "purposes": ["marketing-cookies"],
+            "cookies": ["marketing-cookies"],
+            "optOut": false,
+            "apps": [
+                {
+                    "name": "facebook",
+                    "title": "Facebook",
+                    "purposes": ["facebook"],
+                    "cookies": ["facebook"],
+                    "optOut": false
+                },
+                {
+                    "name": "google-ads",
+                    "title": "Google Ads",
+                    "purposes": ["google-ads"],
+                    "cookies": ["google-ads"],
+                    "optOut": false
+                },
+                {
+                    "name": "google-analytics",
+                    "title": "Google Analytics",
+                    "purposes": ["google-analytics"],
+                    "cookies": ["google-analytics"],
+                    "optOut": false
+                },
+                {
+                    "name": "double-click-floodlight",
+                    "title": "DoubleClick Floodlight",
+                    "purposes": ["double-click-floodlight"],
+                    "cookies": ["double-click-floodlight"],
+                    "optOut": false
+                }
+            ]
+        }
+    ]
+}
